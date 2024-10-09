@@ -9,24 +9,52 @@
 <body>
 
     <header>
+
         <h1>Exercicios de JavaScript</h1>
         <p>Proposto por Jonatas Gaspar</p>
+
     </header>
 
     <main>
+
         <div class="exercicio01">
             <h2>Cumprimentos</h2>
             <label for="inputNome">Como você se chama?</label>
             <input type="text" name="inputNome" id="inputNome">
-            <div class="respostaNome">
-                Aguardando...
+            <input type="button" value="Enviar" onclick="enviarNome()">
+            <div class="resposta">
+                <div class="respostaNome">
+
+                </div>
             </div>
         </div>
 
         <div class="exercicio02">
             <h2>Ano para dias</h2>
-            <label for="">Quantos anos você tem?</label>
-            <input type="number" name="inputAnos" id="">
+            <label for="inputIdade">Qual a sua idade?</label>
+            <input type="number" name="inputIdade" id="inputIdade">
+            <input type="button" value="Enviar" onclick="enviarIdade()">
+            <div class="resposta">
+                <div class="respostaIdade">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="exercicio03">
+            <h2>Quanto ganho no mês?</h2>
+            <label for="inputRecebePorHora">Quanto recebe por hora?</label>
+            <input type="number" name="inputRecebePorHora" id="inputRecebePorHora">
+            <br>
+            <label for="inputHorasPorMes">Quantas horas trabalha por mês?</label>
+            <input type="number" name="inputHorasPorMes" id="inputHorasPorMes">
+            <br>
+            <input type="button" value="Enviar" onclick="enviarGanhoNoMes()">
+            <div class="resposta">
+                <div class="respostaGanhoNoMes">
+                    
+                </div>
+            </div>
         </div>
     </main>
 
@@ -34,5 +62,6 @@
 
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
