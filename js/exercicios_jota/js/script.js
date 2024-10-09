@@ -19,7 +19,9 @@ function enviarNome(){
         // toUpperCase() - Versão maiúscula.
         respostaNome.innerHTML = '[Erro] A primeira letra do nome deve ser maiúscula.'
     }
-    else if (userName.value == 'Link') {
+    else if (userName.value.toLowerCase() === 'link') {
+        // toLowerCase() - transforma todas as letras da string para minúsculas.
+        // === 'link' - depois de converter, ele compara com 'link', que está tudo em minúsculo.
         respostaNome.innerHTML = 'Wake up, Link! <br> <span>*(^-^)*</span> '
     }
     else {
