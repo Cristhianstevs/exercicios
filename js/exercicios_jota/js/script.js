@@ -35,21 +35,19 @@ function enviarIdade() {
 
     respostaIdade.innerHTML = ''
 
-    /*if (isNaN(userIdade.value)) { // Como o input está como tipo 'number', isso não é necessário.
-        respostaIdade.innerHTML = 'Não existe idade com letras... Tente Novamente.'
-    }*/
+    // Não é preciso ter condição para caso tenha letras por causa do input de tipo 'number'.
     if (userIdade.value === '') {
         respostaIdade.innerHTML = '[Erro] O campo está vazio, digite algum número.'
     }
     else if (userIdade.value < 5) {
         respostaIdade.innerHTML = 'Quem te deixou mexer aqui?'
     }
-    else if (userIdade.value > 110) {
-        respostaIdade.innerHTML = 'Tem certeza que você existe? Tente novamente...'
-    }
     else {
         let anoParaDia = userIdade.value * 365
         respostaIdade.innerHTML = `Você viveu por aproximadamente ${anoParaDia} dias!`
+        if (userIdade.value > 110) {
+            respostaIdade.innerHTML += ' Tem certeza que você existe?'
+        }
     }
 
 }
