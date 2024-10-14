@@ -5,8 +5,4 @@
 const pessoa = {nome: 'Cristhian', idade: '17'}
 pessoa.idade = '18' // Vou fazer em 03/01/2025
 console.log(pessoa)
-
-function saudacao() {
-    console.log("Olá, mundo!");
-}
-saudacao();  // "Olá, mundo!"
+// Se tento reatribuir o objeto 'pessoa' por inteiro dará erro, pois cons é uma variável constante.

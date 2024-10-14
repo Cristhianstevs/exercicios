@@ -1,12 +1,15 @@
 // Aprendendo hoisting
 
 // Hoisting com Var
+console.log('===--- Hoisting com var ---===')
 
 console.log(minhaVar)  // undefined
 var minhaVar = 10
 console.log(minhaVar)  // 10
 
-/* É assim que o JavaScript organiza antes de iniciar.
+/* 
+
+É assim que o JavaScript organiza antes de iniciar.
 
 var minhaVar;
 console.log(minhaVar);  // undefined
@@ -17,13 +20,18 @@ console.log(minhaVar);  // 10
 
 
 
+
+
 // Hoisting com Let
+console.log('===--- Hoisting com let ---===')
 
 // console.log(minhaLet);  // ReferenceError: Cannot access 'minhaLet' before initialization
 let minhaLet = 20
 console.log(minhaLet)
 
-/* Hoisting de 'let', mas com TDZ
+/* 
+
+Hoisting de 'let', mas com TDZ
 
 let minhaVariavel;  // A variável é elevada, mas está em uma "zona morta" até a linha de inicialização.
 console.log(minhaVariavel);  // ReferenceError
@@ -33,15 +41,21 @@ minhaVariavel = 10;
 
 
 
-// Hoisting com Const
 
-// console.log(minhaConstante)  // ReferenceError
+
+// Hoisting com Const
+console.log('===--- Hoisting com const ---===')
+
+// console.log(minhaConstante)  <-  ReferenceError
 const minhaConstante = 30
 console.log(minhaConstante)
 
 
 
+
+
 // Hoisting com Funções
+console.log('===--- Hoisting com funções ---===')
 
 saudacao01();  // "Olá, mundo!"
 function saudacao01() {
@@ -57,18 +71,21 @@ saudacao();  // "Olá, mundo!"
 
 */
 
+
+
+
+
 // Function Declaration (elevada):
 
 console.log(saudacao02())  // "Olá, mundo!"
 function saudacao02() {
-    return "Olá, mundo!"
+    return "Olá, mundo!-02"
 }
 
 // Function Expression (não elevada):
 
-// console.log(saudacao());  // TypeError: saudacao is not a function
+// console.log(saudacao());  <-  TypeError: saudacao is not a function
 var saudacao = function() {
-    return "Olá, mundo!"
+    return "Olá, mundo!-03"
 }
-
-
+console.log(saudacao())

@@ -11,7 +11,7 @@ function exemploVar(valor) {
     console.log(a)
 }
 
-var resposta = exemploVar(30)// exemploVar(valor) passa a ser exemploVar(30)
+var resposta = exemploVar(30) // exemploVar(valor) passa a ser exemploVar(30)
 console.log(a) // continua valendo 10
 
 
