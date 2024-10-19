@@ -29,3 +29,22 @@ console.log(aprender.toUpperCase())
 console.log(aprender.slice(9, 19))
 console.log(aprender.replace("divertido", "incrível"))
 console.log(aprender.trim()) // Não tem espaços em branco //
+console.log();
+
+
+
+
+
+/*
+Exercício 3:
+- Crie uma função que receba uma string e retorne a mesma string em letras maiúsculas.
+- Dada a frase "Eu estou aprendendo JavaScript!", use indexOf para encontrar a posição da palavra "JavaScript".
+- Dada a string " OpenAI ", remova os espaços em branco nas extremidades usando trim().
+*/
+console.log("Exercício 3");
+ 
+let estudo = "Eu estou aprendendo JavaScript!";
+let estudo01 = "  OpenAI  "
+console.log(estudo.toUpperCase());
+console.log(estudo.indexOf("JavaScript"));
+console.log(estudo01.trim())
