@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Idade</title>
+    <style>
+        body { 
+            height: 97vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Qual a sua Idade?</h1>
+        Minha idade:
+        <input id="minhaIdade" type="text" placeholder="Digite sua idade.">
+        <input type="submit" value="Enviar" onclick="enviar()">
+        <div id="resultado">
+
+        </div>
+    </main>
+
+    <script>
+        function enviar() {
+            let minhaIdade = document.getElementById("minhaIdade");
+            let resultado = document.getElementById("resultado");
+
+            if (minhaIdade.value == "") {
+                resultado.innerHTML = "Digite um número"
+            }
+            else if (minhaIdade.value <= 0) {
+                resultado.innerHTML = "Número inválido"
+            }
+            else if (minhaIdade.value >= 18 && minhaIdade.value < 90) {
+                resultado.innerHTML = "Você é maior de 18 anos!"
+            }
+            else if (minhaIdade.value >= 90 && minhaIdade.value < 100) {
+                resultado.innerHTML = "Você ainda existe?"
+            }
+            else if (minhaIdade.value >= 100) {
+                resultado.innerHTML = "Você é um DEUS!"
+            }
+            else {
+                resultado.innerHTML = "Você não é maior de 18 anos."
+            }
+            
+        }
+    </script>
+</body>
+</html>
