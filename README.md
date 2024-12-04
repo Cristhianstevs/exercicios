@@ -19,11 +19,9 @@
 <a href="js/exercicios_gpt/aula005/script.js">Aula 5</a> <br>
 <a href="js/exercicios_gpt/aula005/ex.js">Exercício 5</a> <br>
 <br>
-
 <h3>Exercícios proposto por <a href="https://github.com/jonatasgs7" target="_blank">Jonatas</a></h3>
 <a href="js/exercicios_jota/index.html">Exercício</a> <br>
 <br>
-
 <h3>Exercícios de nicolas (meu irmão mais novo)</h3>
 <a href="js/exercicios_nicolas/aula001/script.js">Aula 1</a> <br>
 <a href="js/exercicios_nicolas/aula002/script.js">Aula 2</a> <br>
