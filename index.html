@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios</title>
+    <style>
+        
+        /* Geral */
+
+        :root {
+            --cor01: #122324;
+            --cor02: #2f3a32;
+            --cor03: #545748;
+            --cor04: #db9f75;
+            --cor05: #804012;
+            --cor06: #3e2411;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(to right, var(--cor01), var(--cor02), var(--cor03));
+            color: var(--cor04);
+            font-weight: 100;
+        }
+        a {
+            text-decoration: none;
+            color: var(--cor04);
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            padding: 50px;
+        }
+        header h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 100;
+        }
+
+        /* main */
+        main {
+            padding: 0 50px;
+        }
+        main #centro {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+        }
+        main #centro .container #descricao {
+            width: 400px;
+            margin-right: 250px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+        main #centro .container h2 {
+            margin-bottom: 20px;
+        }
+        main #centro .container .ex{
+            display: flex;
+            flex-direction: row;
+        }
+        main #centro .container .ex .borda {
+            border-right: 1px solid #dba07550;
+        }
+        main #centro .container .ex .borda:nth-of-type(3) {
+            border: none;
+        }
+        main #centro .container .ex .borda .ex_js {
+            height: 130px;
+            width: 130px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            font-size: 15px;
+            border-radius: 1px;
+        }
+        main #centro .container .ex .borda .ex_js:hover {
+            cursor: pointer;
+            transform: scale(102%);
+            background-image: linear-gradient(to left, var(--cor02), var(--cor03));
+            box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.281);
+            transition: .2s;
+        }
+        main #centro .container .ex .borda .ex_js img {
+            height: 50px;
+            width: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercícios</h1>
+    </header>
+    <main>
+        <section id="centro">
+            <section class="container">
+                <section id="descricao">
+                    <p>Uma página dedicada a exercícios de JavaScript, Python, HTML e CSS</p>
+                </section>
+            </section>
+            <section class="container">
+                <h2>JavaScript</h2>
+                <div class="ex">
+                    <a href="gpt.html">
+                        <div class="borda">
+                            <div class="ex_js">
+                                <img src="img/icons8-chatgpt-50.png" alt="Logo_ChatGPT">
+                                <p>Proposto pelo ChatGPT</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="js/exercicios_jota/index.html">
+                        <div class="borda">
+                            <div class="ex_js">
+                                <img src="img/icons8-professor-50.png" alt="Logo_Professor">
+                                <p>Proposto por <div class="link"><a href="https://github.com/jonatasgs7" target="_blank">Jonatas</a></div></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="niko.html">
+                        <div class="borda">
+                            <div class="ex_js">
+                                <img src="img/icons8-pessoa-do-sexo-masculino-50.png" alt="Logo_Pessoa" >
+                                <p>Proposto para Nicolas</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

@@ -11,6 +11,10 @@ else {
     console.log("Número zero")
 }; // Número positivo, pois 10 é maior que 0.
 
+
+
+
+
 // Usando `if` e `else`, escreva um programa que verifica se uma pessoa tem idade suficiente para votar (idade mínima: 16).
 
 let idade = 17;
@@ -20,6 +24,10 @@ if (idade >= 16) {
 else {
     console.log("Não pode votar");
 }; // Pode votar, pois 17 é maior que 16.
+
+
+
+
 
 // Crie um programa com `switch` que imprime o nome do mês baseado em um número de 1 a 12.
 
@@ -64,6 +72,10 @@ switch (mes) {
     default:
         console.log("Mês inválido");
 }; // Dezembro, pois mês 12 é Dezembro.
+
+
+
+
 
 /*
 Desafio: Use `switch` para classificar a nota de um aluno:

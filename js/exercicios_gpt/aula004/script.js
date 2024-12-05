@@ -15,6 +15,10 @@ else {
     console.log("Menor de idade");
 };
 
+
+
+
+
 // else if
 
 let nota = 100;
@@ -27,6 +31,10 @@ else if (nota >= 70) {
 else {
     console.log("Precisa se esforçar mais.");
 };
+
+
+
+
 
 // switch case
 
