@@ -26,6 +26,10 @@ const saudacao = function(nome = "Amigo") {
 saudacao(); // Olá, Amigo!
 saudacao("ChatGPT"); // Olá, ChatGPT!
 
+const saudacao2 = (nome = "Usuário") => console.log(`Olá, ${nome}!`);
+saudacao2();
+saudacao2("Santiago");
+
 
 
 
